@@ -15,7 +15,6 @@ function AdminHeader({ userType }) {
           alt="Seeree Logo"
           className="profile-pic"
         /> */}
-        // <img src="college.jpg"alt="college.jpg"className="profile-pic" style={{ marginTop:"43px", width: "100px", height: "100px" }}/><br />
         <h1>Welcome, Admin!</h1>
         <div className="logout-link">
           <Link to={"/logout"}>Logout</Link>
