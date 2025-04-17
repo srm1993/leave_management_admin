@@ -64,11 +64,6 @@ function Login({ onLogin }) {
                             height: "25vh",           
                           }}
                         >
-                          <img
-                            src="college.jpg"
-                            alt="college"
-                            style={{ width: "150px", height: "auto" }} 
-                          />
                        </div>
                         
                         <h4 className="mt-1 mb-5 pb-1">
