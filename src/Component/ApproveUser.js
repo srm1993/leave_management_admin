@@ -16,7 +16,7 @@ function ApproveUser() {
       });
   }, []);
   const changeStatus = (id) => {
-    axios.patch("http://127.0.0.1:8000/admin/changeStatus/"+id).then(data=>{
+    axios.patch("https://leave-management-backend-7chl.onrender.com/admin/changeStatus/"+id).then(data=>{
       alert(data.data)
       window.location.reload();
     }).catch(err=>{
