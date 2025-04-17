@@ -9,7 +9,7 @@ function ApplyLeave() {
   // Fetch leave requests
   const fetchLeaveRequests = () => {
     axios
-      .get("http://127.0.0.1:8000/admin/fetchLeave")
+      .get("https://leave-management-backend-7chl.onrender.com/admin/fetchLeave")
       .then((res) => {
         const updatedData = res.data.map((leave) => ({
           ...leave,
