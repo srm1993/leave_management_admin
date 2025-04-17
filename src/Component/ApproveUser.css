@@ -1,0 +1,104 @@
+/* .alluser {
+  margin-top: 60px;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .alluser th {
+    margin-top: ;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  .alluser tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .alluser tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .alluser tr:hover {
+    background-color: #eaf3f9;
+  }
+  .alluser td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  .alluser button {
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .alluser button:hover {
+    background-color: #16a085;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .alluser button:active {
+    transform: scale(0.95);
+    background-color: #149174;
+  }
+  
+   */
+   /* General table styling */
+.alluser {
+  margin-top: 60px; /* Avoid overlap with header */
+  width: 100%; /* Full width minus sidebar */
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table header styling */
+.alluser th {
+  background-color: #cbd5e1; /* Light blue-gray */
+  color: #333;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* Table row styling */
+.alluser td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternating row colors */
+.alluser tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.alluser tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Status button styling */
+.alluser button {
+  background-color: #ff5733; /* Orange button */
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.alluser button:hover {
+  background-color: #e74c3c; /* Darker on hover */
+}

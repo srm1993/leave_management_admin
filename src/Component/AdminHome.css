@@ -1,0 +1,212 @@
+/* General body and background settings */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Magical gradient */
+  min-height: 100vh;
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite; /* Animated gradient effect */
+}
+
+/* Animated background gradient */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Add some margin from the top of the page (header area) */
+.admin-dashboard-container {
+  margin-top: 100px; /* Add space from the header */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+}
+
+/* Admin Home container */
+.admin-dashboard {
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for the background */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2; /* Ensure the card stays above the magical background */
+}
+
+/* Heading styles */
+.admin-dashboard h2 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8); /* Glowing text effect */
+}
+
+/* Leave Stats container */
+.leave-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
+  width: 100%;  /* Ensure the stats use the full width of the card */
+}
+
+/* Individual stat cards */
+.stat {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 22px;
+  font-weight: 600;
+  transition: transform 0.3s ease;  /* Add hover effect */
+}
+
+/* Stat card hover effect */
+.stat:hover {
+  transform: scale(1.05);  /* Slightly enlarge the card on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Approved stat style */
+.approved {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Pending stat style */
+.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+/* Rejected stat style */
+.rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Statistics Section */
+.statistics {
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);  /* Add background to the statistics card */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);  /* Card shadow */
+}
+
+.statistics h3 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Statistics stat card */
+.stat-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.stat-item {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Magical particles effect */
+@keyframes particlesAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+/* Floating glowing particles */
+.particle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #ffdd00;
+  border-radius: 50%;
+  animation: particlesAnimation 2s infinite;
+  animation-delay: calc(-2s * var(--i)); /* Staggered delays for different particles */
+}
+
+.particle:nth-child(1) {
+  --i: 1;
+  top: 20%;
+  left: 10%;
+}
+.particle:nth-child(2) {
+  --i: 2;
+  top: 30%;
+  left: 50%;
+}
+.particle:nth-child(3) {
+  --i: 3;
+  top: 40%;
+  left: 80%;
+}
+.particle:nth-child(4) {
+  --i: 4;
+  top: 70%;
+  left: 30%;
+}
+.particle:nth-child(5) {
+  --i: 5;
+  top: 80%;
+  left: 60%;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .admin-dashboard {
+    padding: 20px;
+  }
+
+  .leave-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat {
+    margin-bottom: 15px;
+    padding: 20px;  /* Adjust padding for smaller screens */
+  }
+
+  .stat-card {
+    padding: 15px;
+  }
+}
