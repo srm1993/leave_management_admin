@@ -6,7 +6,7 @@ function ApproveUser() {
   const [user, setUsers] = useState([]);
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/admin/allUser")
+      .get("https://leave-management-backend-7chl.onrender.com/admin/allUser")
       .then((res) => {
         setUsers(res.data);
         console.log(user);
