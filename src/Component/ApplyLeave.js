@@ -31,7 +31,7 @@ function ApplyLeave() {
     if (!leaveId) return;
 
     axios
-      .patch(`http://127.0.0.1:8000/admin/updateStatus/${leaveId}`, { status })
+      .patch(`https://leave-management-backend-7chl.onrender.com/admin/updateStatus/${leaveId}`, { status })
       .then((res) => {
         setLeaveRequests((prev) =>
           prev.map((leave) =>
@@ -49,7 +49,7 @@ function ApplyLeave() {
     if (!leave.document) return;
 
     const cleanedUrl = leave.document.replace(/\\/g, "/");
-    const fullUrl = `http://localhost:8000/${cleanedUrl}`;
+    const fullUrl = `https://leave-management-backend-7chl.onrender.com/${cleanedUrl}`;
     setSelectedDocumentUrl(fullUrl);
   };
 
