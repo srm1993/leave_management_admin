@@ -21,7 +21,7 @@ function Login({ onLogin }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
-      .post("https://leave-management-backend-7chl.onrender.com/admin/login", formData)
+      .post("https://leave-management-backend-6nqt.onrender.com/admin/login", formData)
       .then((res) => {
         localStorage.setItem("userType", res.data[0].role);
 
