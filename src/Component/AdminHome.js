@@ -27,7 +27,7 @@ function AdminHome() {
   useEffect(() => {
     const fetchLeaveCounts = async () => {
       try {
-        const res = await axios.get("https://leave-management-backend-7chl.onrender.com/admin/leaves");
+        const res = await axios.get("https://leave-management-backend-6nqt.onrender.com/admin/leaves");
         // console.log(res.data);
         setLeaveCounts(res.data);
       } catch (err) {
