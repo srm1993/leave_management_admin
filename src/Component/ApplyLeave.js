@@ -9,7 +9,7 @@ function ApplyLeave() {
   // Fetch leave requests
   const fetchLeaveRequests = () => {
     axios
-      .get("https://leave-management-backend-7chl.onrender.com/admin/fetchLeave")
+      .get("https://leave-management-backend-6nqt.onrender.com/admin/fetchLeave")
       .then((res) => {
         const updatedData = res.data.map((leave) => ({
           ...leave,
@@ -31,7 +31,7 @@ function ApplyLeave() {
     if (!leaveId) return;
 
     axios
-      .patch(`https://leave-management-backend-7chl.onrender.com/admin/updateStatus/${leaveId}`, { status })
+      .patch(`https://leave-management-backend-6nqt.onrender.com/admin/updateStatus/${leaveId}`, { status })
       .then((res) => {
         setLeaveRequests((prev) =>
           prev.map((leave) =>
@@ -49,7 +49,7 @@ function ApplyLeave() {
     if (!leave.document) return;
 
     const cleanedUrl = leave.document.replace(/\\/g, "/");
-    const fullUrl = `https://leave-management-backend-7chl.onrender.com/${cleanedUrl}`;
+    const fullUrl = `https://leave-management-backend-6nqt.onrender.com/${cleanedUrl}`;
     setSelectedDocumentUrl(fullUrl);
   };
 
